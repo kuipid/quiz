@@ -1,0 +1,149 @@
+.gamePageCont{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(9, 170, 245, 0.897);
+    overflow: hidden;
+}
+#loader{
+    border: 1.4rem solid white;
+    border-radius: 50%;
+    border-top: 1.4rem solid;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 2s linear infinite;
+}
+.hidden{
+    display: none;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.gamePAge{
+    width: max-content;
+    max-width: 100%;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+}
+.gamePAge h1{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    
+}
+#hud{
+    padding:1rem;
+    display: flex;
+}
+.options{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 7px;
+    border: solid 2px white;
+    cursor: pointer;
+    display: flex;
+    transition: all ease-in-out  .5s;
+}
+.options:hover{
+    margin-left: 3px;
+}
+.options button{
+    padding: 10px 20px;
+    background-color: rgba(9, 170, 245, 0.897);
+    color: white;
+    border: none;
+    font-weight: 900;
+}
+.options span{
+    color: rgb(4, 217, 255);
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+.bubles{
+    position: absolute;
+}
+.bubles:nth-child(1){
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    background-color: transparent;
+    border: white solid 1px;
+}
+.bubles:nth-child(2){
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 30%;
+    background-color: transparent;
+    border: white solid 1px;
+}
+.bubles:nth-child(3){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 60%;
+    background-color: transparent;
+    border: white solid 1px;
+}
+.bubles:nth-child(4){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 20%;
+    background-color: transparent;
+    border: white solid 1px;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+#hud{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#progressBar{
+    width: 200px;
+    height: 30px;
+    border: solid 3px rgb(1, 17, 243);
+    
+}
+#progressFull{
+    height: 100%;
+    width: 0%;
+    background-color: white;
+}
+@media screen and (max-width:450px){
+    .gamePAge{
+        width: 100%;
+        padding: 2rem;
+        color: rgb(255, 255, 255);
+    }
+    #qustionTag{
+        text-align: center;
+    }
+}

@@ -1,0 +1,17 @@
+const oneBtn = document.getElementById("one")
+const twoBtn = document.getElementById("two")
+const threeBtn = document.getElementById("three")
+const fourBtn = document.getElementById("four")
+const fiveBtn = document.getElementById("five")
+const sixBtn = document.getElementById("six")
+const sevenBtn = document.getElementById("seven")
+const eigthBtn = document.getElementById("eight")
+const nineBtn = document.getElementById("nine")
+const minusBtn = document.getElementById("minus")
+const multiplyBtn = document.getElementById("multiply")
+const divideBtn = document.getElementById("divide")
+const equalsBtn = document.getElementById("equals")
+const plusBtn = document.getElementById("plus")
+
+
+console.log((eigthBtn.value + sevenBtn.value))

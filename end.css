@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+}
+body{
+    width: 100vw;
+    
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(9, 170, 245, 0.897);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+form{
+    padding: 1em;
+    text-align: center;
+}
+form  input::placeholder{
+    font-weight: 100;
+}
+form  input{
+    border: none;
+    outline:none;
+    padding: 15px 30px;
+    background-color: white;
+    color: grey;
+}
+form  button{
+    outline: none;
+    margin-left: -2px;
+    padding: 12px 30px;
+    background-color: rgba(49, 46, 224, 0.897);
+    color: rgba(255, 255, 255, 0.897);
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all ease .5s;
+    border: 2px solid rgba(255, 255, 255, 0.897);
+}
+
+.bubles{
+    position: absolute;
+}
+.bubles:nth-child(1){
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 7s   infinite linear ;
+}
+.bubles:nth-child(2){
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 30%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 5s   infinite linear ;
+}
+.bubles:nth-child(3){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 60%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 10s   infinite linear ;
+}
+.bubles:nth-child(4){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 20%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 10s   infinite linear ;
+}
+
+.bubles:nth-child(5){
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    bottom: 10%;
+    left: 0;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 7s   infinite linear ;
+}
+
+.bubles:nth-child(6){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 20%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 5s   infinite linear ;
+}
+
+.bubles:nth-child(7){
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    bottom: 10%;
+    left: 20%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 8s   infinite linear ;
+}
+
+.bubles:nth-child(8){
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 5s   infinite linear ;
+}
+
+.bubles:nth-child(9){
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    bottom: 10%;
+    right: 20%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 4s   infinite linear ;
+}
+
+.bubles:nth-child(10){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 10%;
+    background-color: transparent;
+    border: white solid 1px;
+    animation: bubble 6s   infinite linear ;
+}
+form  button:hover{
+    cursor: pointer;
+    margin-left: 4px;
+    padding: 12px 30px;
+    color: rgba(49, 46, 224, 0.897);
+    background-color: rgba(255, 255, 255, 0.897);
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 2px solid rgba(49, 46, 224, 0.897);
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 30px;
+}
+.links a{
+    padding: 12px 30px;
+    background-color: rgba(49, 46, 224, 0.897);
+    color: rgba(255, 255, 255, 0.897);
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 2px solid rgba(255, 255, 255, 0.897);
+    transition: all ease .5s;
+}
+.links a:hover{
+    cursor: pointer;
+    margin-left: 4px;
+    padding: 12px 30px;
+    color: rgba(49, 46, 224, 0.897);
+    background-color: rgba(255, 255, 255, 0.897);
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 2px solid rgba(49, 46, 224, 0.897);
+}
+@keyframes bubble {
+    0%{
+        transform: rotate(0deg);
+        transform: translateY(100vh);
+    }
+    
+    100%{
+        transform: rotate(270deg);
+        transform: translateY(-100vh);
+    }
+}
+@media screen and (max-width:450px){
+    #finalScore{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        text-align: center;
+    }
+    form input{
+        margin-bottom: 10px;
+    }
+
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 15px 30px;
+    }
+    .links a{
+        margin-bottom: 1em;
+    }
+}

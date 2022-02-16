@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="gamePage.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gamePage.css">
+</head>
+<body>
+    <div class="gamePageCont">
+        <div id="loader"></div>
+        
+        <div class="gamePAge hidden"  id="gamePAge" >
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Question
+                    </p>
+                    <h1 class="hud-main-text" id="question-counter">
+                        1/4
+                    </h1>
+                    <div id="progressBar">
+                        <div id="progressFull"> 
+                        </div>
+                    </div>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            
+            <h1 id="qustionTag">
+                What's Stephens Favourite Food
+            </h1>
+            <div  class="options">
+                <button>A</button>
+                <span class="tions" data-number="1" id="option1"></span>
+            </div>
+            <div class="options">
+                <button>B</button>
+                <span data-number="2" class="tions" id="option2"></span>
+            </div>
+            <div  class="options">
+                <button>C</button>
+                <span data-number="3" class="tions" id="option3"></span>
+            </div>
+            <div class="options">
+                <button>D</button>
+                <span data-number="4" class="tions" id="option4"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
